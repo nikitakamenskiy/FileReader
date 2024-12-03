@@ -10,8 +10,21 @@ repositories {
 }
 
 dependencies {
-    testImplementation platform('org.junit:junit-bom:5.10.0')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    testImplementation (
+            'org.junit.jupiter:junit-jupiter:5.11.3',
+            'com.codeborne:xls-test:1.7.2',
+            'com.codeborne:selenide:7.6.0',
+            'com.codeborne:pdf-test:1.9.0',
+            'org.assertj:assertj-core:3.26.3',
+            'com.opencsv:opencsv:5.9',
+            'com.fasterxml.jackson.core:jackson-core:2.13.1',
+            'org.apache.poi:poi:5.3.0'
+
+
+    )
+
+
 }
 
 test {
